@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+   <children>
+      <ToolBar layoutX="170.0" layoutY="51.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ced327w;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <Button fx:id="btnIncluir" mnemonicParsing="false" onAction="#btnIncluirOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #ced327;" text="Incluir" />
+            <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#btnEditarOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ced327;" text="Editar" />
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluirOnAction" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #ced327;" text="Excluir" />
+            <Label text="Filtro:" />
+            <TextField fx:id="txtFiltro" prefHeight="25.0" prefWidth="117.0" />
+            <Button fx:id="btnFiltrar" mnemonicParsing="false" onAction="#btnFiltrarOnAction" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #ced327;" text="Filtrar" />
+            <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#btnLimparOnAction" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #ced327;" text="Limpar" />
+            <Button fx:id="btnEstatistica" mnemonicParsing="false" onAction="#btnEstatisticaOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ced327;" text="Estatistica" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tblAlbum" layoutX="200.0" layoutY="92.0" prefHeight="360.0" prefWidth="600.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="tblColNome" prefWidth="168.0" text="Nome do Album" />
+          <TableColumn fx:id="tblColArtista" prefWidth="133.0" text="Artista" />
+            <TableColumn fx:id="tblColGenero" prefWidth="66.0" text="Gênero" />
+            <TableColumn fx:id="tblColFoto" prefWidth="113.0" text="Foto" />
+            <TableColumn fx:id="tblColStatus" prefWidth="119.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

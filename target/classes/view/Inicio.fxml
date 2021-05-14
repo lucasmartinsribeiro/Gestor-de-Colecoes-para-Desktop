@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InicioController">
+   <children>
+      <Button fx:id="btnNext" layoutX="516.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnNextOnAction" style="-fx-background-color: #ced327;" text="Next" />
+      <Label fx:id="lblGestorColecao" layoutX="171.0" layoutY="106.0" prefHeight="69.0" prefWidth="258.0" text="Gestor de Coleção" textFill="#ced327f5">
+         <font>
+            <Font name="Gabelisa" size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAbelLucas" layoutX="316.0" layoutY="223.0" prefHeight="25.0" prefWidth="113.0" text="    Abel e Lucas" textAlignment="RIGHT">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="178.0" text=" Taylor Swift">
+         <font>
+            <Font name="Gabelisa" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
